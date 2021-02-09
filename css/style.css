@@ -1,0 +1,488 @@
+/*
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Dosis', sans-serif;
+*/
+html {
+    scroll-behavior: smooth; 
+}
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden; 
+    color: #777;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #222;
+    line-height: 1.5; 
+}
+h2 {
+    font-size: 36px;
+    line-height: 1.5;
+}
+h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+
+/* NAVIGATION START */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#nav {
+    padding: 20px 0;
+    background: #fff;
+}
+#nav .logo {
+    float: left;
+}
+#nav .page-menu {
+    float: right;
+}
+#nav .page-menu li{
+    float: left;
+}
+#nav .page-menu li a {
+  display: block;
+  padding: 0 10px;
+  color: #222;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+#nav .page-menu li:hover a {
+  color: #8490ff;
+}
+#header .this-is-me {
+     background: #f9f9ff;
+}
+#header .this-is-me .text-content {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+    padding-top: 13%;
+}
+#header .this-is-me .img-content {
+    width: 50%;
+    float: right;
+    padding: 0 15px;
+}
+#header .this-is-me .text-content p:first-of-type {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+}
+#header .this-is-me .text-content h1 {
+    font-size: 60px;
+    margin: 20px 0;
+}
+.btn {
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    background: linear-gradient(to right, #8490ff, #62bdfc);
+    padding: 0 30px;
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: none;
+    transition: box-shadow 0.3s;
+}
+.btn:hover {
+    box-shadow: 4px 4px 8px 0 rgba(132, 144, 255, 0.8);
+}
+/* Header End */
+
+/* About Start */
+
+#about {
+    padding: 96px 0 120px;
+}
+#about .img-content {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+}
+#about .text-content {
+    width: 40%;
+    float: right;
+    padding: 50px 15px 0;
+}
+.txt-small-title {
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* About End */
+
+/* Services Start */
+
+#services {
+    text-align: center;
+    padding-bottom: 120px;
+}
+#services .card {
+    width: 33.33%;
+    padding: 0 15px;
+    float: left;
+}
+#services .clearfix:first-of-type {
+    margin: 50px ;
+}
+#services .card i {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+/* Services end */
+
+/* Statistic Start */
+
+#statistic {
+    padding: 120px 0;
+    background: linear-gradient(to right, #8490ff, #62bdfc);
+    color: #fff; 
+    text-align: center;
+}
+#statistic h2 {
+    color: inherit;
+    margin: 0;
+}
+#statistic .box {
+    width: 25%;
+    padding: 0 15px;
+    float: left;
+}
+#statistic p {
+    margin: 0;
+}
+
+/* Statistic End */
+
+/* Portfolio Start */
+
+#portfolio {
+padding: 120px 0;
+text-align: center;
+}
+#portfolio .clearfix {
+    margin-top: 50px;
+}
+#portfolio .card {
+    width: 33.33%;
+    padding: 0 15px;
+    float: left;
+}
+#portfolio .card h3 {
+    font-size: 18px;
+    margin: 0;
+}
+#portfolio .card .mb-30 {
+    margin-bottom: 100px;
+}
+#portfolio .card img {
+    width: 100%;
+}
+/* Portfolio End */
+
+/* Testimonials Start */
+
+#testimonials {
+    padding: 120px 0;
+    background: #f9f9ff;
+}
+.title h2,
+.title p {
+    text-align: center;
+    margin-bottom: 0;
+}
+#testimonials .clearfix {
+    margin-top: 96px;
+}
+#testimonials .box {
+    width: 48%;
+    padding: 30px;
+    background: #fff;
+}
+#testimonials .box:first-child {
+    float: left;
+}
+#testimonials .box:last-child {
+    float: right;
+}
+#testimonials .box .img-content {
+    width: 15%;
+    padding: 0 15px;
+    float: left;
+}
+#testimonials .box .text-content {
+    width: 80%;
+    padding: 0 15px;
+    float: right;
+}
+#testimonials .box .text-content P:first-child {
+    margin-top: 0;
+}
+#testimonials .box .text-content a {
+    color: #777777;
+    transition: color 0.3s;
+}
+#testimonials .box .text-content a:hover {
+    color: #62bdfc;
+}
+
+/* Testimonials Start */
+
+/* Price Start */
+
+#price {
+    padding: 120px 0;
+    text-align: center;
+}
+#price .plans {
+    margin-top: 96px;
+}
+#price .plan {
+    width: 25%;
+    padding: 30px 15px;
+    background: #f9f9ff;
+    float: left;
+}
+#price .plan h3 {
+    font-size: 35px;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    border: 30px solid rgba(132, 144, 255, 0.1);
+    border-radius: 50%;
+    line-height: 70px;
+}
+#price .plan ul li {
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+#price .plan p:last-of-type {
+    font-size: 35px;
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+#price .plan h4 {
+    color: #000;
+}
+#price .plan:hover {
+    background: linear-gradient(to right, #8490ff, #62bdfc);
+    color: #fff;
+}
+#price .plan:hover h3,
+#price .plan:hover h4,
+#price .plan:hover p:last-of-type {
+    color: #fff;
+}
+#price .plan:hover h3 {
+    border-color: rgba(255, 255, 255, 0.21);
+}
+/* Price End */
+
+/* Blog Start */
+
+#blog {
+    padding: 120px 0;
+    background: #f9f9ff;
+}
+#blog .boxes {
+    margin-top: 96px;
+}
+#blog .box {
+    width: 33.33%;
+    padding: 0 15px;
+    float: left;
+}
+#blog .box img {
+    width: 100%;
+}
+#blog .box .left {
+    padding: 15px 0;
+    float: left;
+}
+#blog .box .right {
+    padding: 15px 0;
+    float: right;
+}
+#blog .box a {
+    font-size: 15px;
+    color: #777;
+    font-weight: 600;
+    transition: color 0.3;
+}
+#blog .box a:hover {
+    color: #62bdfc;
+}
+#blog .box hr {
+    border-color: #ccc;
+    border: none;
+}
+
+/* Blog End */
+
+/* Our Clients Start */
+
+#our-clients {
+    background: linear-gradient(to right, #8490ff, #62bdfc);
+    padding: 120px 0;
+}
+#our-clients .image-content {
+    width: 20%;
+    padding: 0 15px;
+    float: left;
+    text-align: center;
+}
+
+/* Our Clients Start */
+
+/* Contact Start */
+
+#contact {
+    padding: 96px 0;
+}
+#contact h2 {
+    text-align: center;
+}
+#contact iframe {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 80px;
+}
+#contact .info {
+    width: 30%;
+    float: left;
+}
+#contact .contact-form {
+    width: 65%;
+    float: right;
+}
+#contact .side-of-form {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+}
+#contact .info .icon {
+    float: left;
+    padding-right: 15px;
+    line-height: 1.1;
+}
+#contact .info .text-content {
+    float: left;
+    padding-left: 15px;
+}
+#contact .info ul li {
+    padding-bottom: 15px;
+}
+#contact .info .text-content span {
+    display: block;
+    line-height: 1.1;
+}
+#contact .info .text-content span:first-child {
+    color: #000;
+}
+#contact .info .icon i {
+    font-size: 29px;
+}
+#contact .contact-form input[type="text"], 
+#contact .contact-form input[type="email"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+#contact .contact-form textarea {
+    width: 100%;
+    height: 150px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+/* Contact End */
+
+/* Footer Start */
+
+#footer {
+    padding-top: 96px;
+    background: #04091e;
+    color: #fff;
+    overflow: hidden;
+}
+#footer .footer-item {
+    width: 33.33%;
+    padding: 0 15px;
+    float: left;
+}
+#footer .footer-item h3 {
+    color: inherit;
+}
+#footer p {
+    opacity: 0.5;
+    line-height: 1.4;
+}
+#footer .footer-item input {
+    height: 40px;
+}
+#footer .footer-item input[type="submit"] {
+    width: 40px;
+    background: #8490ff;
+    color: #fff;
+    position: relative;
+    left: -5px;
+    border: none;
+}
+#footer .footer-item input[type="email"] {
+    width: calc(100% - 44px);
+    padding-left: 15px;
+}
+#footer .social a {
+    display: inline-block;
+    color: inherit;
+    margin-right: 25px;
+    transition: color 0.3s;
+}
+#footer .social a:hover {
+    color: #8490ff;
+}
+#footer .footer-bottom p {
+    margin: 35px;
+    text-align: center;
+}
+/* Footer End */ 
